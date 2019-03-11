@@ -2,6 +2,8 @@
 
 For more details visit [nexclipper.io](https://www.nexclipper.com/) For beta service, visit [NexClipper server](https://server.nexclipper.com)
 
+![](docs/images/logo1.png)
+
 NexClipper is an open source software to monitor and manage performance of the container cluster - Docker and Kubernetes. NexClipper features the following capabilities:
 
 - Fullstack dashboard (Infrastructure, Kubernetes)
@@ -11,7 +13,7 @@ NexClipper is an open source software to monitor and manage performance of the c
 
 ## Architecture overview
 
-![](image)
+![](docs/images/NexClipper_Architecture.png)
 
 ## Install
 
