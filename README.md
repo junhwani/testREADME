@@ -18,4 +18,7 @@ NexClipper is an open source software to monitor and manage performance of the c
  There are various ways of installing NexClipper.
 
  ### Precompiled binaries
+
+
+
  ### Docker images
