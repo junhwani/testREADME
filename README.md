@@ -23,5 +23,7 @@ There are various ways of installing NexClipper.
 
 ### Docker images
 Docker image
+
     $ docker run ...
+    
 NexClipper will...
