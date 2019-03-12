@@ -51,13 +51,13 @@ On Kubernetes Master
 
 > redis
 
-   $kubectl create -f redis.yaml
-   $kubectl create -f redisservice.yaml
+    $kubectl create -f redis.yaml
+    $kubectl create -f redisservice.yaml
 
 > mysql
 
-   $kubectl create -f mysql.yaml
-   $kubectl create -f mysqlservice.yaml
+    $kubectl create -f mysql.yaml
+    $kubectl create -f mysqlservice.yaml
 
 > influxdb
 
