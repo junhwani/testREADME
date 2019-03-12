@@ -22,7 +22,7 @@ NexClipper Cloud features the following capabilities:
 For more details visit  https://www.nexclipper.com/
 For beta service, visit https://server.nexclipper.com
 
-## NexClipper  
+## NexClipper
 
 NexClipper is an open source software to monitor and manage performance of the container cluster -  Docker and Kubernetes.
 NexClipper features the following capabilities:
@@ -31,7 +31,7 @@ NexClipper features the following capabilities:
 - Infrastruture Monitoring (Container, Host, Resource)
 - Incidents Management
 
-## Architeture Overview
+## Architecture Overview
 
 ![](docs/images/NexClipper_Architecture.png)
 
@@ -39,15 +39,56 @@ NexClipper features the following capabilities:
 
 There are various ways of installing NexClipper.
 
-### Precompiled binaries
+### Prerequisites
 
+- Installed Kubernetes Cluster (Master Node, Worker Node 1 more)
+- Installed Apache Kafka on kubernetes Cluster (including Zookeeper)
+- An SSH key pair on your local Linux/macOS/BSD machine.
+
+### Prepare deployment
+
+On Kubernetes Master
+
+> redis
+
+   $kubectl create -f redis.yaml
+   $kubectl create -f redisservice.yaml
+
+> mysql
+
+   $kubectl create -f mysql.yaml
+   $kubectl create -f mysqlservice.yaml
+
+> influxdb
+
+    $kubectl create -f influx.yaml
+    $kubectl create -f influxservice.yaml
+
+
+### Nexclipper service deployment
+
+ - workflow
+
+     $kubectl create -f workflow_deployment.yaml
+     $kubectl create -f workflow_service.yaml
+
+
+ - collector
+
+     $kubectl create -f collectorapi_deployment.yaml
+     $kubectl create -f collectorapi_service.yaml
+
+
+### Nexclipper Agent deployment
+
+   $kubectl create -f nexclipper-agent.yaml
 
 
 ### Docker images
 
 Docker image
 
-    $ nexclipper/nexagent
+   $nexclipper/nexagent
 
 NexClipper will...
 
@@ -55,8 +96,8 @@ NexClipper will...
 
 How to Build
 
-    $ go get...
-    $ yaml
+   $go get...
+   $yaml
 
 ## Licensing
 
