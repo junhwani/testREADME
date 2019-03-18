@@ -35,6 +35,10 @@ NexClipper features the following capabilities:
 
 ![](docs/images/NexClipper_Architecture.png)
 
+## NexClipper Dashboard
+
+![](docs/images/NexClipper_dashboard.png)
+
 ## Install
 
 There are various ways of installing NexClipper.
