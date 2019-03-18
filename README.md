@@ -22,7 +22,7 @@ NexClipper Cloud features the following capabilities:
 For more details visit  https://www.nexclipper.com/
 For beta service, visit https://server.nexclipper.com
 
-## NexClipper
+## NexClipper  
 
 NexClipper is an open source software to monitor and manage performance of the container cluster -  Docker and Kubernetes.
 NexClipper features the following capabilities:
@@ -49,55 +49,53 @@ There are various ways of installing NexClipper.
 
 On Kubernetes Master
 
-> redis
+- redis
 
-    $kubectl create -f redis.yaml
-    $kubectl create -f redisservice.yaml
+      $kubectl create -f redis.yaml  
+      $kubectl create -f redisservice.yaml
 
-> mysql
+- mysql
 
-    $kubectl create -f mysql.yaml
-    $kubectl create -f mysqlservice.yaml
+      $kubectl create -f mysql.yaml  
+      $kubectl create -f mysqlservice.yaml
 
-> influxdb
+- influxdb
 
-    $kubectl create -f influx.yaml
-    $kubectl create -f influxservice.yaml
+      $kubectl create -f influx.yaml   
+      $kubectl create -f influxservice.yaml
 
 
 ### Nexclipper service deployment
 
- - workflow
+- workflow
 
-     $kubectl create -f workflow_deployment.yaml
-     $kubectl create -f workflow_service.yaml
+      $kubectl create -f workflow_deployment.yaml  
+      $kubectl create -f workflow_service.yaml
 
 
- - collector
+- collector
 
-     $kubectl create -f collectorapi_deployment.yaml
-     $kubectl create -f collectorapi_service.yaml
+      $kubectl create -f collectorapi_deployment.yaml  
+      $kubectl create -f collectorapi_service.yaml
+
+- ui
+
+      $kubectl create -f deployment.yaml
+      $kubectl create -f service.yaml
 
 
 ### Nexclipper Agent deployment
 
-   $kubectl create -f nexclipper-agent.yaml
+    $kubectl create -f nexclipper-agent.yaml
 
 
 ### Docker images
 
 Docker image
 
-   $nexclipper/nexagent
+    $nexclipper/nexagent
 
 NexClipper will...
-
-### Building from source
-
-How to Build
-
-   $go get...
-   $yaml
 
 ## Licensing
 
